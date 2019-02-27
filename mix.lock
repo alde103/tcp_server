@@ -1,0 +1,3 @@
+%{
+  "ring_logger": {:hex, :ring_logger, "0.5.0", "dcf9455914c1969b2d55cacb7d37fc9e4ac02d65b1c3de8135c531497f8aed51", [:mix], [], "hexpm"},
+}
