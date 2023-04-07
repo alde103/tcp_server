@@ -1,3 +1,4 @@
 %{
-  "ring_logger": {:hex, :ring_logger, "0.5.0", "dcf9455914c1969b2d55cacb7d37fc9e4ac02d65b1c3de8135c531497f8aed51", [:mix], [], "hexpm", "4fd1867cddd3847c4ad5c474c83c4b73489bb8f503ffc8dace2750dbb9f50450"},
+  "circular_buffer": {:hex, :circular_buffer, "0.4.1", "477f370fd8cfe1787b0a1bade6208bbd274b34f1610e41f1180ba756a7679839", [:mix], [], "hexpm", "633ef2e059dde0d7b89bbab13b1da9d04c6685e80e68fbdf41282d4fae746b72"},
+  "ring_logger": {:hex, :ring_logger, "0.10.0", "62e85a16d0cff8bc59652e74b1a5478c8ef14b4fc06edd59eb65394913057a0e", [:mix], [{:circular_buffer, "~> 0.4.0", [hex: :circular_buffer, repo: "hexpm", optional: false]}], "hexpm", "8febfebd83bb22c744f2bdcb711a1c4538be9955c00c3a1b89a9cf9c3fc87a3d"},
 }
