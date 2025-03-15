@@ -59,25 +59,25 @@ defmodule Tcp.Client.Handler do
 
       def handle_msg(socket, data, state) do
         require Logger
-        Logger.warn("No handle_msg/3 clause in #{__MODULE__} provided for #{inspect({socket, data, state})}")
+        Logger.warning("No handle_msg/3 clause in #{__MODULE__} provided for #{inspect({socket, data, state})}")
         state
       end
 
       def handle_close(socket, state) do
         require Logger
-        Logger.warn("No handle_close/2 clause in #{__MODULE__} provided for #{inspect({socket, state})}")
+        Logger.warning("No handle_close/2 clause in #{__MODULE__} provided for #{inspect({socket, state})}")
         state
       end
 
       def handle_error(socket, reason, state) do
         require Logger
-        Logger.warn("No handle_error/3 clause in #{__MODULE__} provided for #{inspect({socket, reason, state})}")
+        Logger.warning("No handle_error/3 clause in #{__MODULE__} provided for #{inspect({socket, reason, state})}")
         state
       end
 
       def handle_timeout(state) do
         require Logger
-        Logger.warn("No handle_timeout/1 clause in #{__MODULE__} provided for #{inspect(state)}")
+        Logger.warning("No handle_timeout/1 clause in #{__MODULE__} provided for #{inspect(state)}")
         state
       end
 

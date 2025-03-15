@@ -10,8 +10,9 @@ defmodule Handler.Mock do
   end
 
   @impl true
-  def handle_msg(_socket, data, test_pid) do
+  def handle_msg(socket, data, test_pid) do
     send(test_pid, {:handle_msg, data})
+    :gen_tcp.send(socket, data)
     test_pid
   end
 

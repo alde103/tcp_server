@@ -79,7 +79,7 @@ defmodule Tcp.Server do
 
   def close_alive_sockets(port) do
     Port.list()
-    |> Enum.filter(fn x -> Port.info(x)[:name] == 'tcp_inet' end)
+    |> Enum.filter(fn x -> Port.info(x)[:name] == ~c"tcp_inet" end)
     |> Enum.filter(fn x ->
       {:ok, {{0, 0, 0, 0}, port}} == :inet.sockname(x) ||
         {:ok, {{127, 0, 0, 1}, port}} == :inet.sockname(x)
